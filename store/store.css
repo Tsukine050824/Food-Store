@@ -88,7 +88,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    color: gray;
     border-radius: 5px;
 }
 
@@ -193,4 +193,8 @@ footer {
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
+}
+
+li {
+    color: white;
 }
