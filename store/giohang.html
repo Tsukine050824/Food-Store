@@ -4,38 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Confirmation</title>
-    
+    <link rel="stylesheet" href="giohang.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .step-indicator {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .step {
-            text-align: center;
-            width: 100%;
-        }
-        .step.active .circle {
-            background-color: #007bff;
-            color: white;
-        }
-        .circle {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #e9ecef;
-            display: inline-block;
-            line-height: 30px;
-        }
-        .product-image {
-            width: 100px;
-            height: 100px;
-            background-color: #e9ecef;
-        }
-    </style>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>My Online Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background"></div>
     <div class="container mt-5">
         <div class="step-indicator">
             <div class="step ">
@@ -136,7 +122,7 @@
                 <p>4.020.000 VND</p>
             </div>
         </div>
-        <button class="btn btn-success btn-block">Tiếp tục</button>
+       <a href="thanhtoan.html"> <button class="btn btn-success btn-block">Tiếp tục</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
