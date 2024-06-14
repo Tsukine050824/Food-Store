@@ -1,0 +1,47 @@
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.step {
+    text-align: center;
+    width: 100%;
+}
+.step.active .circle {
+    background-color: #007bff;
+    color: white;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: inline-block;
+    line-height: 30px;
+}
+.product-image {
+    width: 100px;
+    height: 100px;
+    background-color: #e9ecef;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1em;
+    backdrop-filter: blur(5px); 
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img4.thuthuatphanmem.vn/uploads/2020/08/28/mau-background-menu_090707850.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(0px); 
+    z-index: -1;
+}
