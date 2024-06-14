@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .step-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .step {
+            text-align: center;
+            width: 100%;
+        }
+        .step.active .circle {
+            background-color: #007bff;
+            color: white;
+        }
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #e9ecef;
+            display: inline-block;
+            line-height: 30px;
+        }
+        .product-image {
+            width: 100px;
+            height: 100px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="step-indicator">
+            <div class="step ">
+                <div class="circle">1</div>
+                <p>Giỏ Hàng</p>
+            </div>
+            <div class="step">
+                <div class="circle">2</div>
+                <p>Phương Thức Thanh Toán</p>
+            </div>
+            <div class="step">
+                <div class="circle">3</div>
+                <p>Hoàn Tất</p>
+            </div>
+         
+        </div>
+        <h3>Địa chỉ nhận hàng</h3>
+        <p>8 Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</p>
+        <button class="btn btn-primary"> Thay đổi</button>
+        <h3>Sản phẩm</h3>
+        <div class="row mb-3">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+                <p>Tên sản phẩm</p>
+                
+            </div>
+            <div class="col-md-2">
+                <p>Số lượng</p>
+                
+            </div>
+            <div class="col-md-2">
+                <p>Thành tiền</p>
+            </div>
+            
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <div class="product-image"></div>
+                
+            </div>
+            <div class="col-md-4">
+                <p>Sản phẩm 1</p>
+             
+            </div>
+            <div class="col-md-2">
+                <p>01</p>
+            </div>
+            <div class="col-md-2">
+                <p>1.990.000 VND</p>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <div class="product-image"></div>
+            </div>
+            <div class="col-md-4">
+                <p>Sản phẩm 2</p>
+            </div>
+            <div class="col-md-2">
+                <p>01</p>
+            </div>
+            <div class="col-md-2">
+                <p>1.000.000 VND</p>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <div class="product-image"></div>
+            </div>
+            <div class="col-md-4">
+                <p>Sản phẩm 3</p>
+            </div>
+            <div class="col-md-2">
+                <p>01</p>
+            </div>
+            <div class="col-md-2">
+                <p>1.000.000 VND</p>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Mã giảm giá">
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-primary">Áp dụng</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Tổng tiền hàng:</p>
+                <p>Phí vận chuyển:</p>
+                <p>Tổng thanh toán:</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <p>3.990.000 VND</p>
+                <p>30.000 VND</p>
+                <p>4.020.000 VND</p>
+            </div>
+        </div>
+        <button class="btn btn-success btn-block">Tiếp tục</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
