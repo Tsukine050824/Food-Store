@@ -91,6 +91,14 @@ nav ul li a:hover {
     color: gray;
     border-radius: 5px;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #555;
+}
   .step-indicator {
             display: flex;
             justify-content: space-between;
@@ -163,4 +171,53 @@ nav ul li a:hover {
 
 .product-item button:hover {
     background-color: #218838;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1em 0;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+    backdrop-filter: blur(5px); 
+    
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us {
+    padding-left: 40px;
+
+}
+
+.contact-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.faq {
+    padding-right: 40px;
+
+}
+
+.faq-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+li {
+    color: white;
+}
+.faq-list a {
+    color: inherit; /* Ensures the links inherit the color from the parent element */
+    text-decoration: none; /* Removes the underline from links */
+}
+.faq-list a li {
+    list-style: none; /* Ensures no list style is applied to the items */
 }
