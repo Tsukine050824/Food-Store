@@ -91,14 +91,6 @@ nav ul li a:hover {
     color: gray;
     border-radius: 5px;
 }
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: #555;
-}
   .step-indicator {
             display: flex;
             justify-content: space-between;
