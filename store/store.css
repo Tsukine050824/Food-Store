@@ -93,10 +93,51 @@ nav ul li a:hover {
 }
 
 .bar {
-    padding-top: 4px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bar-item {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: #fff; 
+}
+
+.button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+}
+
+.fruit {
+    background-color: #ff6347; 
+}
+
+.fast-food {
+    background-color: #ffa500; 
+}
+
+.dessert {
+    background-color: #ff69b4; 
+}
+
+.bar-item:hover {
+    background-color: #333; 
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bar-item:active {
+    background-color: #333;
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 
