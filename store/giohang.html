@@ -43,9 +43,27 @@
                     <p>Hoàn Tất</p>
                 </div>
             </div>
-            <h3>Địa chỉ nhận hàng</h3>
-            <p>8 Tôn Thất Thuyết, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</p>
-            <button class="btn btn-primary">Thay đổi</button>
+        <h2>Thay đổi địa chỉ nhận hàng</h2>
+        <form id="addressForm">
+            <label for="address">Địa chỉ nhận hàng:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+            <input type="submit" value="Lưu địa chỉ">
+        </form>
+        <p id="savedAddress"></p>
+        
+        <script>
+        document.getElementById('addressForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var address = document.getElementById('address').value;
+            localStorage.setItem('shippingAddress', address);
+            document.getElementById('savedAddress').textContent = "Đã lưu địa chỉ: " + address;
+        });
+        var savedAddress = localStorage.getItem('shippingAddress');
+        if (savedAddress) {
+            document.getElementById('savedAddress').textContent = "Địa chỉ nhận hàng được lưu: " + savedAddress;
+        }
+        </script>
             <h3>Sản phẩm</h3>
             <div class="row mb-3">
                 <div class="col-md-2"></div>
@@ -67,10 +85,12 @@
                 </div>
                 <div class="col-md-4">
                     <p>Sản phẩm 1</p>
+                    
                 </div>
                 <div class="col-md-2">
-                    <p>01</p>
+                    <td><button>-</button> 01 <button>+</button></td>
                 </div>
+                
                 <div class="col-md-2">
                     <p>1.990.000 VND</p>
                 </div>
@@ -85,7 +105,7 @@
                     <p>Sản phẩm 2</p>
                 </div>
                 <div class="col-md-2">
-                    <p>01</p>
+                    <td><button>-</button> 01 <button>+</button></td>
                 </div>
                 <div class="col-md-2">
                     <p>1.000.000 VND</p>
@@ -101,7 +121,7 @@
                     <p>Sản phẩm 3</p>
                 </div>
                 <div class="col-md-2">
-                    <p>01</p>
+                    <td><button>-</button> 01 <button>+</button></td>
                 </div>
                 <div class="col-md-2">
                     <p>1.000.000 VND</p>
@@ -141,6 +161,7 @@
                         <li>Instagram: FoodStoreVN</li>
                     </ul>
                 </div>
+                
                 <div class="download">
                     <h2>Download Now</h2>
                     <a href="#"><img src="image/app_store.jpg" alt="App Store"></a>
