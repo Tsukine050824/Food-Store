@@ -128,7 +128,7 @@ footer {
     
 }
 
-.contact {
+#contact {
     display: flex;
     justify-content: space-between;
 }
